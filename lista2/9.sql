@@ -1,4 +1,4 @@
-CREATE IF NOT EXISTS VIEW Lustrzanki AS
+CREATE VIEW IF NOT EXISTS Lustrzanki AS
 SELECT Aparat.model, Producent.nazwa, przekatna, rozdzielczosc, minPrzeslona, maxPrzeslona FROM Aparat 
 JOIN Matryca ON Matryca.ID = matryca
 JOIN Obiektyw ON Obiektyw.ID = obiektyw
